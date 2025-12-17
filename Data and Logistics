@@ -1,0 +1,14 @@
+Report (Data and Logistics)
+Firstly, our model finds the sequence of a characteristic from the dataset. After we trained our model to get to know the sequence of the characteristics. We want to use it to find similar sequences of data from other datasets. To achieve this, we acquired our datasets from the National Library of Medicine (NCBI). The sequence of specific eyecolors, and the sequence of a person’s gene which contains the eyecolor of himself. Take two online datasets from NCBI as examples. Sequence of Oculocutaneous Albinism, a known sequence of nucleotides that is about eyes, and https://www.ncbi.nlm.nih.gov/nuccore/NC_000015.10?report=fasta&from=27718508&to=28099815, a sequence from a person. These are the datasets we are going to use for our model.
+Secondly, we want to use these libraries/tools such as pandas, numpy, scikit-learn, biopython, pyahocorasick, rust-bio for our model. Biopython is used for accessing the dataset online. Rust-bio and pyahocorasick are used to provide FM-index implementation of the multi-pattern search tools. We use the search tools to find known genetic markers first, then, we use the results to train our model (scikit-learn). Pandas is used to create our final dataset. Scikit-learn is used to separate our data frame into training and testing sets. And numpy is used for numerical operations. These are the libraries/tools we might use for our model.  In addition, bioinformatics is an elusive topic at the best of times so the presentation and reports will need to be clear and concise to accurately demonstrate our project’s purpose.
+Lastly, our team roles. LaVine will handle most of the research and development of the model, discuss and communicate about the datasets with Bo and Grant, and assign the specific team work to Bo and Grant (Initiator of this project topic). Bo and Grant will assist LaVine to do the research and development such as writing the assigned code part, training the model together. LaVine will also handle the presentation and clarification of the project and direct the reports. These are the team roles for our team.
+
+
+FM INDEX implementation: 
+https://pubmed.ncbi.nlm.nih.gov/25107872/ 
+https://github.com/lh3/ropebwt2 
+
+Dynamic FM-index:
+https://framagit.org/mikaels/dfmi
+
+
